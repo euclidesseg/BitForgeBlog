@@ -1,0 +1,32 @@
+.sidebar__content {
+  background-color: var(--primary-color);
+}
+
+.rout__url::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  display: none;
+  width: 4px;
+  margin-left: 27px;
+  background-image: linear-gradient(var(--text-default), var(--border-theme));
+}
+
+.sidebar__items .rout__url:hover::before {
+  display: inline;
+}
+
+.route_before_active::before {
+  display: inline;
+}
+ .sidebar__content .sidebar__items::-webkit-scrollbar{
+  width: 8px;
+}
+.sidebar__content .sidebar__items::-webkit-scrollbar-track{
+   background-color: var(--background-body);
+   border-radius: 10px;
+  }
+  .sidebar__content .sidebar__items::-webkit-scrollbar-thumb{
+   background-color: var(--border-theme);
+   border-radius: 10px;
+ }

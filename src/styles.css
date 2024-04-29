@@ -1,1 +1,105 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Symbols&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital@0;1&family=Work+Sans:ital,wght@0,600;1,600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+:root {
+  /* colors */
+  /* backgrounds */
+  --primary-color: #e2f0eb;
+  --secondary-color: #0b0e68;
+  --background-body: #e2eced;
+  --new-post-bg:#0b0e68;
+  /* backgrounds */
+  /* text-colors */
+  --title-color: #0b0e68;
+  --text-default:#07043a;
+  --text-default-two:#dcdee3;
+  --footer-items-color:#0b0e68;
+  /* text-colors */
+
+  --border-theme:#d1d5db;
+  /* colors */
+  
+
+  /* Fonts */
+  --font-poppins: "Poppins", sans-serif;
+  
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: var(--font-poppins);
+  font-weight: 400;
+  color: var(--text-default);
+}
+.light__theme{
+  --primary-color: #e2f0eb;
+  --secondary-color: #0b0e68;
+  --background-body: #e2eced;
+  --text-default:#090550;
+  --title-color:#0b0e68;
+  --border-theme:#d1d5db;
+  --footer-items-color:#0b0e68;
+  --new-post-bg:#0b0e68;
+}
+.dark__theme{
+  --primary-color: #000000;
+  --secondary-color:#44474b;
+  --background-body:#1b1f23;
+  --text-default:#dcdee3;
+  --title-color:#dcdee3;
+  --border-theme:#212b3b;
+  --footer-items-color:#dcdee3;
+  --new-post-bg:#44474b;
+}
+.green__theme{
+  --primary-color: #111b21;
+  --secondary-color:#2a3942;
+  --background-body:#202c33;
+  --text-default:#dcdee3;
+  --title-color:#00a884;
+  --border-theme:#187c664d;
+  --footer-items-color:#00a884;
+  --new-post-bg:#2a3942;
+  
+}
+.soho__theme{
+  --primary-color: #a855f7;
+  --text-default:#dcdee3;
+  --title-color:#dcdee3;
+  --background-body:#faf5ff;
+}
+.primary__color{
+  background-color: var(--primary-color);
+}
+.bg__body{
+  background-color: var(--background-body);
+}
+.sidebar__items_bg{
+  background-color: var(--secondary-color);
+}
+.text-default{
+  color: var(--text-default);
+}
+
+.title__page {
+  color: var(--title-color);
+}
+
+.footer-items-color{
+  color: var(--footer-items-color);
+}
+.new__post_bg{
+  background-color: var(--new-post-bg);
+}
+.border__theme{
+  border-color: var(--border-theme);
+}
+.text-default-two {
+  color: var(--text-default-two) !important;
+}

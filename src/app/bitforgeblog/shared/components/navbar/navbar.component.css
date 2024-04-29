@@ -1,0 +1,11 @@
+
+.navbar__content{
+  background-color: var(--primary-color);
+}
+@media screen and (min-width:640px) {
+  .navbar__content{
+    width: calc(100% - 250px);
+    left: 250px;
+    background-color: var(--primary-color);
+  }
+}

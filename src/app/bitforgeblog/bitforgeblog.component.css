@@ -1,0 +1,15 @@
+.section__home {
+  height: calc(100vh - 120px);
+}
+
+@media screen and (min-width: 640px) {
+  .section__home {
+    width: calc(100% - 250px);
+    height: calc(100vh - 60px);
+  }
+}
+@media screen and (min-width: 1580px) {
+  .section-right {
+    height: 90%;
+  }
+}

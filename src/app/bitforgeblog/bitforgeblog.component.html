@@ -1,0 +1,25 @@
+
+<app-navbar></app-navbar>
+
+<app-sidebar></app-sidebar>
+
+<section class="section__home w-full border-none m-0 px-2 sm:ml-[250px] lg:py-5 lg:flex lg:justify-center lg:items-center">
+
+    <section class="section__router h-full w-full lg:w-[55%] section-left">
+      <router-outlet></router-outlet>
+    </section>
+  
+    <section class="section-right hidden h-full lg:grid lg:grid-cols-2 lg:w-[45%] gap-4">
+        <div class=" bg-blue-400 rounded-sm flex items-center justify-center">
+        </div>
+        <div class=" bg-white rounded-sm flex items-center justify-center">
+        </div>
+        <div class=" bg-teal-500 rounded-sm items-center justify-center">
+        </div>
+        <div class=" bg-emerald-400 rounded-sm flex items-center justify-center">
+        </div>
+    </section>
+  
+  </section>
+
+  <app-footer></app-footer>

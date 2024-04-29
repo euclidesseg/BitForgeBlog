@@ -1,0 +1,20 @@
+<footer class="footer__content h-60 border__theme w-full p-5 flex items-center justify-center relative rounded-tl-3xl rounded-tr-3xl sm:hidden border-t border-1">
+    <ul class="list__items flex items-center justify-between w-full px-5 relative">
+      @for (item of routesItems; track $index) {
+        <li  [routerLink]="item.path" class="cursor-pointer font-bold text-default">
+          <i [ngClass]="routesService.getClass(item.title!.toString())" class="text-2xl fa-solid footer-items-color"></i>
+        </li>
+      } @empty {
+        Empty list of routesItems
+      }
+  
+      <li class="new__post cursor-pointer flex justify-center bg__body w-12 h-12 rounded-full items-center pointer left-[43%] right-[57%] -top-12">
+        <button class="buton-new__post w-10 h-10 rounded-full new__post_bg">
+          <i class="fa-solid fa-plus text-2xl text-white"></i>
+        </button>
+      </li>
+    </ul>
+  </footer>
+  
+  
+  

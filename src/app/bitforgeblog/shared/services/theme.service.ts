@@ -17,9 +17,9 @@ export class ThemeService {
 
   selectMode(mode:string){
     while(this.document.body.classList.length > 0){
-      this.document.body.classList.remove(this.document.body.classList.item(0)!.toString());
+      this.document.body.classList.remove(this.document.body.classList.item(0)!);
     }
-    this.document.body.classList.add(mode)
+    this.document.body.classList.add(mode, "bg__body")
     this._modeSelected.next({mode:mode});
     localStorage.setItem('theme', JSON.stringify(this._modeSelected.value))
   }

@@ -19,14 +19,17 @@
 .route_before_active::before {
   display: inline;
 }
- .sidebar__content .sidebar__items::-webkit-scrollbar{
+
+.sidebar__content .sidebar__items::-webkit-scrollbar {
   width: 8px;
 }
-.sidebar__content .sidebar__items::-webkit-scrollbar-track{
-   background-color: var(--background-body);
-   border-radius: 10px;
-  }
-  .sidebar__content .sidebar__items::-webkit-scrollbar-thumb{
-   background-color: var(--border-theme);
-   border-radius: 10px;
- }
+
+.sidebar__content .sidebar__items::-webkit-scrollbar-track {
+  background-color: var(--background-body);
+  border-radius: 10px;
+}
+
+.sidebar__content .sidebar__items::-webkit-scrollbar-thumb {
+  background-color: var(--border-theme);
+  border-radius: 10px;
+}

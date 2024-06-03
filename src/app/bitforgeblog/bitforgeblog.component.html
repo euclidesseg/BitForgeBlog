@@ -1,25 +1,106 @@
+<section class="relative">
+    <app-navbar></app-navbar>
 
-<app-navbar></app-navbar>
+    <app-sidebar></app-sidebar>
 
-<app-sidebar></app-sidebar>
+    <section
+        class="section__home w-full border-none m-0 px-2 sm:ml-[250px] lg:py-3 lg:flex lg:justify-center lg:items-center">
 
-<section class="section__home w-full border-none m-0 px-2 sm:ml-[250px] lg:py-5 lg:flex lg:justify-center lg:items-center">
+        <section class="section__router h-full w-full lg:w-[55%] section-left relative">
+            <router-outlet></router-outlet>
+        </section>
 
-    <section class="section__router h-full w-full lg:w-[55%] section-left">
-      <router-outlet></router-outlet>
+        <section class="section-right hidden h-full lg:grid lg:grid-cols-2 lg:w-[45%] gap-4 overflow-y-auto">
+            <div class=" primary__color rounded-sm p-1  min-h-[280px] 3xl:max-h-[500px] overflow-hidden">
+                <h4 class="text__default font-semibold h-[7%] w-[90%] mx-auto">Estadisticas</h4>
+                <div class="h-[93%] card__graphic m-auto -ml-3 w-fulll overflow-x-hidden overflow-hidden hover:overflow-y-auto">
+                    <app-visualizations-page></app-visualizations-page>
+                </div>
+            </div>
+            <div class=" primary__color rounded-sm p-1  min-h-[280px]">
+            </div>
+            <div class=" primary__color rounded-sm p-1  min-h-[280px]">
+            </div>
+            <div class=" secondary__color rounded-sm p-1  min-h-[280px] overflow-hidden">
+                <h4 class="text__default-two font-bold h-[10%] w-[90%] mx-auto">Mensajes</h4>
+                <div class="h-[80%] w-[90%]  m-auto w-fulll text-white">
+
+                    <section class="messages w-full h-full overflow-hidden">
+                        <ul class="list_messages h-full hover:overflow-auto py-2">
+                            <!-- <li class="relative h-16 w-[90%] hover:opacity-60 mx-auto  px-2 rounded-md">
+                                <div class="w-full h-full flex justify-center items-center flex-row">
+                                    <div class="w-[10%] h-full cursor-pointer mx-auto">
+                                        <figure class="w-24 h-full flex items-center">
+                                            <img src="../../../../assets/images/yeni.jpeg" alt=""
+                                                class="w-12 h-12 rounded-full object-cover">
+                                        </figure>
+                                    </div>
+                                    <div
+                                        class="w-[90%] h-full px-10 cursor-pointer mx-auto flex items-start justify-center flex-col border-b border__theme">
+                                        <h4 class="chat-name font-semibold text-lg text__default-two">Yenifer</h4>
+                                        <h4 class="chat-text text-sm line-clamp-1 text__default-two">Por eso es que me da
+                                            rabia contigo no respondes nada</h4>
+                                    </div>
+                                </div>
+                            </li> -->
+
+                            <li class="relative h-16 w-[90%] hover:opacity-60 mx-auto  px-2 rounded-md">
+                                <div class="w-full h-full flex justify-center items-center flex-row">
+                                    <div class="w-[10%] h-full cursor-pointer mx-auto">
+                                        <figure class="w-24 h-full flex items-center">
+                                            <img src="../../../../assets/images/WhatsApp Image 2024-01-25 at 9.19.08 PM.jpeg"
+                                                alt="" class="w-12 h-12 rounded-full object-cover">
+                                        </figure>
+                                    </div>
+                                    <div
+                                        class="w-[90%] h-full px-10 cursor-pointer mx-auto flex items-start justify-center flex-col border-b border__theme">
+                                        <h4 class="chat-name font-semibold text-lg text__default-two">Alan</h4>
+                                        <h4 class="chat-text text-sm line-clamp-1 text__default-two">Por eso es que me da
+                                            rabia contigo no respondes nada</h4>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="relative h-16 w-[90%] hover:opacity-60 mx-auto  px-2 rounded-md">
+                                <div class="w-full h-full flex justify-center items-center flex-row">
+                                    <div class="w-[10%] h-full cursor-pointer mx-auto">
+                                        <figure class="w-24 h-full flex items-center">
+                                            <img src="../../../../assets/images/logo.png" alt=""
+                                                class="w-12 h-12 rounded-full object-cover">
+                                        </figure>
+                                    </div>
+                                    <div
+                                        class="w-[90%] h-full px-10 cursor-pointer mx-auto flex items-start justify-center flex-col border-b border__theme">
+                                        <h4 class="chat-name font-semibold text-lg text__default-two">Euclides</h4>
+                                        <h4 class="chat-text text-sm line-clamp-1 text__default-two">Por eso es que me da
+                                            rabia contigo no respondes nada</h4>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="relative h-16 w-[90%] hover:opacity-60 mx-auto  px-2 rounded-md">
+                                <div class="w-full h-full flex justify-center items-center flex-row">
+                                    <div class="w-[10%] h-full cursor-pointer mx-auto">
+                                        <figure class="w-24 h-full flex items-center">
+                                            <img src="../../../../assets/images/user.avif" alt=""
+                                                class="w-12 h-12 rounded-full object-cover">
+                                        </figure>
+                                    </div>
+                                    <div
+                                        class="w-[90%] h-full px-10 cursor-pointer mx-auto flex items-start justify-center flex-col border-b border__theme">
+                                        <h4 class="chat-name font-semibold text-lg text__default-two">Jon Doe</h4>
+                                        <h4 class="chat-text text-sm line-clamp-1 text__default-two">Por eso es que me da
+                                            rabia contigo no respondes nada</h4>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </section>
+
+                </div>
+            </div>
+        </section>
+
     </section>
-  
-    <section class="section-right hidden h-full lg:grid lg:grid-cols-2 lg:w-[45%] gap-4">
-        <div class=" bg-blue-400 rounded-sm flex items-center justify-center">
-        </div>
-        <div class=" bg-white rounded-sm flex items-center justify-center">
-        </div>
-        <div class=" bg-teal-500 rounded-sm items-center justify-center">
-        </div>
-        <div class=" bg-emerald-400 rounded-sm flex items-center justify-center">
-        </div>
-    </section>
-  
-  </section>
 
-  <app-footer></app-footer>
+    <app-footer></app-footer>
+</section>

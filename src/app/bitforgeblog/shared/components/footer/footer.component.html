@@ -1,7 +1,7 @@
-<footer class="footer__content h-60 border__theme w-full p-5 flex items-center justify-center relative rounded-tl-3xl rounded-tr-3xl sm:hidden border-t border-1">
+<footer class="footer__content h-60 border__theme w-full p-5 flex items-center justify-center fixed z-50 bottom-0 rounded-tl-3xl rounded-tr-3xl sm:hidden border-t border-1">
     <ul class="list__items flex items-center justify-between w-full px-5 relative">
       @for (item of routesItems; track $index) {
-        <li  [routerLink]="item.path" class="cursor-pointer font-bold text-default">
+        <li  [routerLink]="item.path" class="cursor-pointer font-bold text__default">
           <i [ngClass]="routesService.getClass(item.title!.toString())" class="text-2xl fa-solid footer-items-color"></i>
         </li>
       } @empty {

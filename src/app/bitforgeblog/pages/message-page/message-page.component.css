@@ -1,0 +1,13 @@
+.messages ul::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .messages ul::-webkit-scrollbar-track {
+    background-color: var(--background-body);
+    border-radius: 10px;
+  }
+  
+  .messages ul::-webkit-scrollbar-thumb {
+    background-color: var(--border-theme);
+    border-radius: 10px;
+  }

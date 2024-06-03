@@ -1,3 +1,85 @@
-<!-- <p-button label="Submit" class="p-button p-button-success"></p-button>
-<p-button label="Help" severity="help" class="p-button p-button-help"></p-button> -->
-<!-- <button mat-raised-button color="primary">Primary</button> -->
+<section class="h-[30%] md:h-[17%] min-h-[100px] w-[100%] flex flex-col items-center justify-between flex-wrap pb-1 pr-1 lg:pr-2 rounded-md">
+
+    <div class="h-1/2 w-full pr-2 primary__color p-2 flex md:hidden items-center rounded-r-md">
+        <form class="mx-auto max-w-[250px]  rounded-full h-10 bg__body px-2 flex items-center justify-between absolute">
+            <input type="text" placeholder="    "
+              class="bg-transparent w-full focus:outline-none pr-4 border-0 focus:ring-0" name="topic">
+              <button class="cursor-pointer" type="submit">
+                <i class="fa-solid fa-magnifying-glass text-xl opacity-70"></i>
+              </button>
+          </form>
+    </div>
+
+    <div class="h-1/2 md:h-full w-full md:flex items-center justify-center gap-2 primary__color px-4 pt-3 pb-2 rounded-l-md overflow-hidden">
+        <section class="splide h-full w-full m-auto" aria-label="Basic Structure Example">
+            <div class="splide__track">
+              <ul class="splide__list flex !flex-row m-auto h-full w-full">
+                
+                <li class="splide__slide rounded-sm my-auto">
+                    <img src="assets/images/user.avif" alt="" class="min-w-[80px] h-[80px] my-auto rounded-sm">
+                </li>
+                <li class="splide__slide rounded-sm my-auto">
+                    <img src="assets/images/logo-blue.jpg" alt="" class="min-w-[80px] h-[80px] rounded-sm">
+                </li>
+                <li class="splide__slide rounded-sm my-auto">
+                    <img src="assets/images/user.avif" alt="" class="min-w-[80px] h-[80px] my-auto rounded-sm">
+                </li>
+                <li class="splide__slide rounded-sm my-auto">
+                    <img src="assets/images/logo-green.jpg" alt="" class="min-w-[80px] h-[80px] rounded-sm">
+                </li>
+                <li class="splide__slide rounded-sm my-auto">
+                    <img src="assets/images/user.avif" alt="" class="min-w-[80px] h-[80px] my-auto rounded-sm">
+                </li>
+                <li class="splide__slide rounded-sm my-auto">
+                    <img src="assets/images/logo-dark.jpg" alt="" class="min-w-[80px] h-[80px] rounded-sm">
+                </li>
+                
+                <li class="splide__slide rounded-sm my-auto">
+                    <img src="assets/images/user.avif" alt="" class="min-w-[80px] h-[80px] my-auto rounded-sm">
+                </li>
+                <li class="splide__slide rounded-sm my-auto">
+                    <img src="assets/images/logo-blue.jpg" alt="" class="min-w-[80px] h-[80px] rounded-sm">
+                </li>
+                <li class="splide__slide rounded-sm my-auto">
+                    <img src="assets/images/user.avif" alt="" class="min-w-[80px] h-[80px] my-auto rounded-sm">
+                </li>
+                <li class="splide__slide rounded-sm my-auto">
+                    <img src="assets/images/logo-green.jpg" alt="" class="min-w-[80px] h-[80px] rounded-sm">
+                </li>
+                <li class="splide__slide rounded-sm my-auto">
+                    <img src="assets/images/user.avif" alt="" class="min-w-[80px] h-[80px] my-auto rounded-sm">
+                </li>
+                <li class="splide__slide rounded-sm my-auto">
+                    <img src="assets/images/logo-dark.jpg" alt="" class="min-w-[80px] h-[80px] rounded-sm">
+                </li>
+                
+                <li class="splide__slide rounded-sm my-auto">
+                    <img src="assets/images/user.avif" alt="" class="min-w-[80px] h-[80px] my-auto rounded-sm">
+                </li>
+                <li class="splide__slide rounded-sm my-auto">
+                    <img src="assets/images/logo-blue.jpg" alt="" class="min-w-[80px] h-[80px] rounded-sm">
+                </li>
+                <li class="splide__slide rounded-sm my-auto">
+                    <img src="assets/images/user.avif" alt="" class="min-w-[80px] h-[80px] my-auto rounded-sm">
+                </li>
+                <li class="splide__slide rounded-sm my-auto">
+                    <img src="assets/images/logo-green.jpg" alt="" class="min-w-[80px] h-[80px] rounded-sm">
+                </li>
+                <li class="splide__slide rounded-sm my-auto">
+                    <img src="assets/images/user.avif" alt="" class="min-w-[80px] h-[80px] my-auto rounded-sm">
+                </li>
+                <li class="splide__slide rounded-sm my-auto">
+                    <img src="assets/images/logo-dark.jpg" alt="" class="min-w-[80px] h-[80px] rounded-sm">
+                </li>
+              </ul>
+            </div>
+          </section>
+    </div>
+   
+</section>
+<div class="list_articles relative w-full pl-2 pr-1 h-[70%] md:h-[83%] pb-3">
+    <ul class="w-full list-none h-full overflow-auto overflow-y-auto relative lg:pr-1">
+       <app-articleblog></app-articleblog>
+       <!-- <app-articleblog></app-articleblog> -->
+    </ul>
+</div>

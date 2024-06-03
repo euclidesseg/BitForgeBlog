@@ -1,13 +1,38 @@
-<nav class="navbar__content border__theme border-b border-1 h-[60px] w-full overflow-hidden flex justify-between relative items-center px-2 py-1 sm:justify-end sm:bg-[#0b0e68]">
-    <div class="logo flex justify-center items-center gap-2 h-4/5 sm:hidden">
-      <figure class=" w-8 h-8">
-        <img src="assets/images/logo.png" alt="" class="w-full h-full shadow-md shadow-[#0b0e68]">
-      </figure>
-      <h1 class="text-xl title__page font-bold">Blog</h1>
+<nav
+  class="navbar__content border__theme border-b border-1 h-[60px] w-full pr-4 overflow-hidden flex justify-between relative z-50 items-center px-2 py-1 sm:justify-end sm:bg-[#0b0e68]">
+  <div class="logo flex justify-center items-center gap-2 h-4/5 sm:hidden">
+    <figure class=" w-8 h-8">
+      <img src="assets/images/fb-imagen.png" alt="" class="w-full h-full shadow-md shadow-[#0b0e68]">
+    </figure>
+    <h1 class="text-xl title__page font-bold">Blog</h1>
+  </div>
+
+
+  <div class="h-full w-full pr-2 primary__color p-2 hidden md:flex items-center rounded-r-md">
+    <form class="mx-auto min-w-[300px] rounded-full h-10 bg__body px-2 flex items-center justify-between absolute">
+      <input type="text" placeholder="    " class="bg-transparent w-full focus:outline-none pr-4 border-0 focus:ring-0"
+        name="topic">
+      <button class="cursor-pointer" type="submit">
+        <i class="fa-solid fa-magnifying-glass text-xl opacity-70"></i>
+      </button>
+    </form>
+  </div>
+  <div class="user flex justify-center w-auto min-w-[150px] items-center h-4/5 gap-2 lg:w-[250px]">
+    <figure class="w-8 h-8 cursor-pointer" [routerLink]="'./profile'">
+      <img src="assets/images/user.avif" alt="" class="w-full h-full rounded-full">
+    </figure>
+    <div class="h-[90%] top-1 flex items-center gap-2 flex-col justify-start relative">
+      <h4 class="text__default font-semibold text-sm">Jon Doe</h4>
+      <span class="w-2 h-2 rounded-full bg-lime-600 block absolute left-0 bottom-2">
+
+      </span>
     </div>
-    <div class="user flex -justify-center items-center h-4/5">
-      <figure class="w-10 h-10 cursor-pointer" [routerLink]="'./profile'">
-        <img src="assets/images/user.avif" alt="" class="w-full h-full rounded-xl">
-      </figure>
-    </div>
-  </nav>
+  </div>
+  <span class="line h-full w-[.5px] block secondary__color -right-32"></span>
+  <div class="w-[50px] h-4/5 min-w-[50px] flex flex-col items-center justify-center relative">
+    <span class="w-full h-1/2 rounded-full block left-0  text-center">
+      <i class="fa-solid fa-bell text__default text__default"></i>
+    </span>
+    <span class="text-red-600 text-[14px] font-semibold text-center h1/2 absolute right-1 top-0">15</span>
+  </div>
+</nav>

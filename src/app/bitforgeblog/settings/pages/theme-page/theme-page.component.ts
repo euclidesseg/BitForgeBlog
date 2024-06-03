@@ -9,8 +9,8 @@ import { ThemeService } from '@shared/services/theme.service';
     CommonModule,
   ],
   template: `
-    <div class="w-4/5 h-[500px] flex items-center justify-center m-auto">
-      <ul class="flex min-h-[100%] w-full justify-center items-center flex-row flex-nowrap gap-5">
+    <div class="w-full h-full absolute top-1/2 bottom-1/2 m-auto">
+      <ul class="flex h-full w-full list-none justify-center items-center flex-row flex-nowrap gap-5 ">
         <li class="w-16  h-16 cursor-pointer shadow-xl shadow-neutral-800  bg-[#e2f0eb] text-center flex items-center justify-center rounded-full" (click)="changeTheme('light__theme')">
           <i class="fa-solid fa-w text-4xl" style="color: #04193e;"></i>
         </li>

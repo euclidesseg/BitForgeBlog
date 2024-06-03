@@ -1,0 +1,20 @@
+.list_articles ul::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .list_articles ul::-webkit-scrollbar-track {
+    background-color: var(--background-body);
+    border-radius: 10px;
+  }
+  
+  .list_articles ul::-webkit-scrollbar-thumb {
+    background-color: var(--border-theme);
+    border-radius: 10px;
+  }
+
+  .filters .p-element li .ng-star-inserted{
+    background-color: var(--background-body) !important;
+  }
+  /* .input__search_an_article{
+    box-shadow: var(--background-body) 3px 3px 6px 0px inset, var(--background-body) -3px -3px 6px 1px inset;
+  } */

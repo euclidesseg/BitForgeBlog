@@ -8,16 +8,16 @@
 :root {
   /* colors */
   /* backgrounds */
-  --primary-color: #e2f0eb;
-  --secondary-color: #0b0e68;
+  --primary-color: #eff5f3;
+  --secondary-color: #373bac;
   --background-body: #e2eced;
-  --new-post-bg:#0b0e68;
+  --new-post-bg:#052bb6;
   /* backgrounds */
   /* text-colors */
-  --title-color: #0b0e68;
-  --text-default:#07043a;
-  --text-default-two:#dcdee3;
-  --footer-items-color:#0b0e68;
+  --title-color: #052bb6;
+  --text-default:#000000;
+  --text-default-two:#dcdee3 !important;
+  --footer-items-color:#052bb6;
   /* text-colors */
 
   --border-theme:#d1d5db;
@@ -38,14 +38,14 @@
   color: var(--text-default);
 }
 .light__theme{
-  --primary-color: #e2f0eb;
-  --secondary-color: #0b0e68;
+  --primary-color: #eff5f3;
+  --secondary-color: #052bb6;
   --background-body: #e2eced;
-  --text-default:#090550;
-  --title-color:#0b0e68;
+  --text-default:#000000;
+  --title-color:#052bb6;
   --border-theme:#d1d5db;
-  --footer-items-color:#0b0e68;
-  --new-post-bg:#0b0e68;
+  --footer-items-color:#052bb6;
+  --new-post-bg:#052bb6;
 }
 .dark__theme{
   --primary-color: #000000;
@@ -62,7 +62,7 @@
   --secondary-color:#2a3942;
   --background-body:#202c33;
   --text-default:#dcdee3;
-  --title-color:#00a884;
+  --title-color:#dcdee3;
   --border-theme:#187c664d;
   --footer-items-color:#00a884;
   --new-post-bg:#2a3942;
@@ -74,8 +74,12 @@
   --title-color:#dcdee3;
   --background-body:#faf5ff;
 }
+
 .primary__color{
   background-color: var(--primary-color);
+}
+.secondary__color{
+  background-color: var(--secondary-color);
 }
 .bg__body{
   background-color: var(--background-body);
@@ -83,8 +87,14 @@
 .sidebar__items_bg{
   background-color: var(--secondary-color);
 }
-.text-default{
+.text__default{
   color: var(--text-default);
+}
+.text__default-two{
+  color: var(--text-default-two);
+}
+.hover_bg:hover{
+  background-color: var(--primary-color);
 }
 
 .title__page {
@@ -100,6 +110,28 @@
 .border__theme{
   border-color: var(--border-theme);
 }
-.text-default-two {
-  color: var(--text-default-two) !important;
+.text__default-two {
+  color: var(--text-default-two);
+}
+.p-button-label{
+  color: white !important;
+}
+.apexcharts-text,.apexcharts-yaxis-label  {
+  fill: var(--text-default);
+}
+.apexcharts-legend-text{
+  color: var(--text-default) !important;
+}
+.apexcharts-tooltip-title{
+  background-color: var(--background-body) !important;
+}
+.apexcharts-tooltip *{
+  background-color: var(--background-body);
+  color: var(--text-default) !important;
+}
+.apexcharts-xaxistooltip {
+  background: var(--background-body) !important;
+}
+.apexcharts-title-text{
+  fill: #00a884 !important;
 }

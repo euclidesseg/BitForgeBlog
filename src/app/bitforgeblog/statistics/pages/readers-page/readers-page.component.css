@@ -1,0 +1,6 @@
+
+.apexcharts-series path{
+  fill: var(--secondary-color) !important;
+  opacity: .5 !important;
+  border: none;
+}

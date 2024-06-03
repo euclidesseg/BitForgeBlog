@@ -19,7 +19,29 @@ export const routes: Routes = [
             {
                 path: 'statistics',
                 title: 'Estadisticas',
-                loadComponent: () => import('./bitforgeblog/pages/statistics-page/statistics-page.component')
+                loadComponent: () => import('./bitforgeblog/statistics/statistic.component'),
+                children:[
+                    {
+                        path:'interactions',
+                        title:"Interacciones",
+                        loadComponent: () => import('./bitforgeblog/statistics/pages/interactions-page/interactions-page.component')
+                    },
+                    {
+                        path:'readers',
+                        title:"Lectores",
+                        loadComponent: () => import('./bitforgeblog/statistics/pages/readers-page/readers-page.component')
+                    },
+                    {
+                        path:'visualizations',
+                        title:"Visualizaciones",
+                        loadComponent: () => import('./bitforgeblog/statistics/pages/visualizations-page/visualizations-page.component')
+                    },
+                    {
+                        path:'',
+                        redirectTo:'interactions',
+                        pathMatch:'full'
+                    }
+                ]
             },
             {
                 path: 'profile',

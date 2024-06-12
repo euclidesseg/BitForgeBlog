@@ -3,15 +3,14 @@
 
     <app-sidebar></app-sidebar>
 
-    <section
-        class="section__home w-full border-none m-0 px-2 sm:ml-[250px] lg:py-3 lg:flex lg:justify-center lg:items-center">
+    <section   class="section__home w-full border-none m-0 px-2 sm:ml-[250px] lg:py-3 xl:flex xl:justify-center xl:items-center gap-2">
 
-        <section class="section__router h-full w-full lg:w-[55%] section-left relative">
+        <section class="section__router h-full w-full xl:w-[55%] section-left relative">
             <router-outlet></router-outlet>
         </section>
 
-        <section class="section-right hidden h-full lg:grid lg:grid-cols-2 lg:w-[45%] gap-4 overflow-y-auto">
-            <div class=" primary__color rounded-sm p-1  min-h-[280px] 3xl:max-h-[500px] overflow-hidden">
+        <section class="section-right hidden h-full xl:grid grid-cols-2 w-[45%] gap-4 overflow-y-auto">
+            <div class=" primary__color rounded-sm p-1  min-h-[280px] overflow-hidden">
                 <h4 class="text__default font-semibold h-[7%] w-[90%] mx-auto">Estadisticas</h4>
                 <div class="h-[93%] card__graphic m-auto -ml-3 w-fulll overflow-x-hidden overflow-hidden hover:overflow-y-auto">
                     <app-visualizations-page></app-visualizations-page>

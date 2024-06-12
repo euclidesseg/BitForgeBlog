@@ -29,11 +29,11 @@ export default class BlogPageComponent implements OnInit {
       { name: 'Mis escritores', code: 'S' }
     ]
     const splide = new Splide('.splide', {
-      type: 'loop',
+      type: 'slide',
       drag: 'free',
       focus: 'center',
       perPage: 1,
-      autoplay:true,
+      autoplay:false,
       direction:'ltr',
       arrows:false,
       pagination:false,

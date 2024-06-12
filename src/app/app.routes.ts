@@ -2,7 +2,7 @@ import { Routes } from '@angular/router';
 
 export const routes: Routes = [
     {
-        path: 'bitforgeblog',
+        path: 'bitforging.blog',
         title: '',
         loadComponent: () => import('./bitforgeblog/bitforgeblog.component'),
         children: [
@@ -112,7 +112,7 @@ export const routes: Routes = [
 
     {
         path: '',
-        redirectTo: 'bitforgeblog',
+        redirectTo: 'bitforging.blog',
         pathMatch: 'full'
     }
 ];

@@ -1,0 +1,8 @@
+:host {
+  display: block;
+}
+
+.gradient__section{
+  background: linear-gradient(to right, #000000, #111b21, #052bb6);
+
+}

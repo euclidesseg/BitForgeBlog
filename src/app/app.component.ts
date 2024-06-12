@@ -11,7 +11,7 @@ import { Mode, ThemeService } from '@shared/services/theme.service';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'BitForgeBlog';
+  title = 'BitForging.Blog';
   constructor(@Inject(DOCUMENT) private document:Document){
     const modeSelected:Mode = JSON.parse(localStorage.getItem('theme')!);
     if(modeSelected){

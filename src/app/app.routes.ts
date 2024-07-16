@@ -17,6 +17,11 @@ export const routes: Routes = [
                 loadComponent: () => import('./bitforgeblog/pages/message-page/message-page.component')
             },
             {
+                path: 'profile',
+                title: 'Perfil',
+                loadComponent: () => import('./bitforgeblog/pages/profile-page/profile-page.component')
+            },
+            {
                 path: 'statistics',
                 title: 'Estadisticas',
                 loadComponent: () => import('./bitforgeblog/statistics/statistic.component'),
@@ -42,11 +47,6 @@ export const routes: Routes = [
                         pathMatch:'full'
                     }
                 ]
-            },
-            {
-                path: 'profile',
-                title: 'Perfil',
-                loadComponent: () => import('./bitforgeblog/pages/profile-page/profile-page.component')
             },
             {
                 path: 'settings',
@@ -90,17 +90,17 @@ export const routes: Routes = [
 
         path: 'auth',
         title: '',
-        loadComponent: () => import('./bitforgeblog/auth/auth.component'),
+        loadComponent: () => import('./auth/auth.component'),
         children: [
             {
                 path: 'login',
                 title: 'Log-In',
-                loadComponent: () => import('./bitforgeblog/auth/pages/login-page/login-page.component'),
+                loadComponent: () => import('./auth/pages/login-page/login-page.component'),
             },
             {
                 path: 'signup',
                 title: 'Sign-Up',
-                loadComponent: () => import('./bitforgeblog/auth/pages/signup-page/signup-page.component')
+                loadComponent: () => import('./auth/pages/signup-page/signup-page.component'),
             },
             {
                 path: '',
@@ -108,6 +108,10 @@ export const routes: Routes = [
                 pathMatch: 'full'
             }
         ]
+    },
+    {
+        path:':id',
+        loadComponent:() => import('./profile/profile.component')
     },
 
     {

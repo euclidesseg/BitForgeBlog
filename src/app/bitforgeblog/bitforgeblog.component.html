@@ -3,16 +3,16 @@
 
     <app-sidebar></app-sidebar>
 
-    <section   class="section__home w-full border-none m-0 px-2 sm:ml-[250px] lg:py-3 xl:flex xl:justify-center xl:items-center gap-2">
+    <section   class="section__home relative w-full border-none m-0 px-2 sm:ml-[250px] lg:py-3 xl:flex xl:justify-center xl:items-start gap-2">
 
         <section class="section__router h-full w-full xl:w-[55%] section-left relative">
             <router-outlet></router-outlet>
         </section>
 
-        <section class="section-right hidden h-full xl:grid grid-cols-2 w-[45%] gap-4 overflow-y-auto">
+        <section class="section-right hidden  xl:grid grid-cols-2 w-[45%] h-full max-h-[730px] gap-4 overflow-y-auto">
             <div class=" primary__color rounded-sm p-1  min-h-[280px] overflow-hidden">
                 <h4 class="text__default font-semibold h-[7%] w-[90%] mx-auto">Estadisticas</h4>
-                <div class="h-[93%] card__graphic m-auto -ml-3 w-fulll overflow-x-hidden overflow-hidden hover:overflow-y-auto">
+                <div class="h-[93%] card__graphic m-auto -ml-3 w-fulll overflow-x-hidden overflow-hidden">
                     <app-visualizations-page></app-visualizations-page>
                 </div>
             </div>
@@ -26,22 +26,7 @@
 
                     <section class="messages w-full h-full overflow-hidden">
                         <ul class="list_messages h-full hover:overflow-auto py-2">
-                            <!-- <li class="relative h-16 w-[90%] hover:opacity-60 mx-auto  px-2 rounded-md">
-                                <div class="w-full h-full flex justify-center items-center flex-row">
-                                    <div class="w-[10%] h-full cursor-pointer mx-auto">
-                                        <figure class="w-24 h-full flex items-center">
-                                            <img src="../../../../assets/images/yeni.jpeg" alt=""
-                                                class="w-12 h-12 rounded-full object-cover">
-                                        </figure>
-                                    </div>
-                                    <div
-                                        class="w-[90%] h-full px-10 cursor-pointer mx-auto flex items-start justify-center flex-col border-b border__theme">
-                                        <h4 class="chat-name font-semibold text-lg text__default-two">Yenifer</h4>
-                                        <h4 class="chat-text text-sm line-clamp-1 text__default-two">Por eso es que me da
-                                            rabia contigo no respondes nada</h4>
-                                    </div>
-                                </div>
-                            </li> -->
+                           
 
                             <li class="relative h-16 w-[90%] hover:opacity-60 mx-auto  px-2 rounded-md">
                                 <div class="w-full h-full flex justify-center items-center flex-row">
@@ -54,8 +39,9 @@
                                     <div
                                         class="w-[90%] h-full px-10 cursor-pointer mx-auto flex items-start justify-center flex-col border-b border__theme">
                                         <h4 class="chat-name font-semibold text-lg text__default-two">Alan</h4>
-                                        <h4 class="chat-text text-sm line-clamp-1 text__default-two">Por eso es que me da
-                                            rabia contigo no respondes nada</h4>
+                                        <h4 class="chat-text text-sm line-clamp-1 text__default-two">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione cum aperiam alias officiis. Voluptatibus.
+                                        </h4>
                                     </div>
                                 </div>
                             </li>
